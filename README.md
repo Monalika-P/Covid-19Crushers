@@ -3,6 +3,11 @@
 # Description
 The Covid-19 crusher is a web based app that is designed to provide a helping hand to the Indian govt in combating this deadly disease . In spite of all the efforts being made by the govt, in terms of lock ,prevented the spread of the disease by a small percent. But this is beginning to have adverse effects on the homeless people. A similar app was developed by the Governmentt of Maharastra which took the symptoms, age ,travel history and other health related factors as the input and then provided an output. The output was in such a way that if the person has many of the covid-19 symptoms, his location, address, email and phone number was taken as the input and directed to the government. We have improvised this app by taking the situation of homeless people into consideration. Due to the lock down, many such people are facing many problems when it comes to food or other essential commodities. Many citizens are also willing to help them but due to lock down conditions they aren’t able to do so. Under such situation, through our app the organizations or citizens willing to help such people can register so that the govt authorities can reach out to them, take the products they donate and distribute it to the needy. The location of the nearest food distribution centres can also be obtained by scanning the qr code that is given and the authorities can direct the needy people to go there so that they can get all the essentials.
 
+Super user:
+login: admin
+password: admin1234
+
+
 # Hardware and Software Requirements
 Hardware Requirement:
 1.Hard disk : 40GB Hard disk or higher. 2.Processor : Intel i3 core 3.Memory : 1 GB or higher. 4.Monitor : Mono/Colour 5.Keyboard : Low profile, dispatchable type.
