@@ -1,0 +1,119 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>home</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="/static/css/bootstrap.min.css" rel="stylesheet">
+<style>
+  body {
+  background-image: url('static/images/m.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="/static/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+   <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Covid19Crusher</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+          <span class="sr-only">(current)</span>
+        <a class="nav-link" href="home1">Home <span class="sr-only">(current)</span> </a>
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link" href="symptoms1">Self Diagonsis</a>
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link" href="gethelp1">Get Help</a>
+      </li>
+      <li class="nav-item">
+
+        <a class="nav-link" href="help2">Help Others  </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class= "logo">
+<img src= "/static/images/i3.jpg" alt="get_help" width="80" height="80" class="float-left">
+</div>
+<main role="main" class="container">
+
+  <div class="starter-template">
+
+    <h1><b><center>COVID-19 INDIA HELPDESK</center><b></h1><br><br>
+<h3><marquee behavior="scroll" direction="right"><font color="red">Stay home,stay safe</font></marquee></h3><br>
+  <h3>-ABOUT-</h3>
+  <form action="">
+      {% csrf_token %}
+  <div class="intro">
+  <div class = "col-sm-10">
+  <p><h5>Coronavirus disease 2019 (COVID-19) is an infectious disease caused by severe acute respiratory syndrome coronavirus 2 (SARS-CoV-2).The disease was first identified in December 2019 in Wuhan, the capital of China's Hubei province, and has since spread globally, resulting in the ongoing 2019–20 coronavirus pandemic.Common symptoms include fever, cough and shortness of breath.Other symptoms may include fatigue, muscle pain, diarrhea, sore throat, loss of smell and abdominal pain.While the majority of cases result in mild symptoms, some progress to viral pneumonia and multi-organ failure.As of 6 April 2020, more than 1,280,000 cases of have been reported in more than 200 countries and territories,resulting in more than 70,400 deaths.More than 270,000 people have recovered.</h5>
+  <br>
+<h3>-TRANSMISSION-</h3>
+  <h5> It is spread during close contact and by small droplets produced when people cough, sneeze or talk;with close contact being within 1–3 m.The COVID-19 virus spreads primarily through droplets of saliva or discharge from the nose when an infected person coughs or sneezes, so it’s important that you also practice respiratory etiquette.
+  Check out the link given here to know your distance from the nearest corona affected patient.It is a covid-19 web tracker where you can check how far are you from the nearest Corona positive person. If you are within 1-1.5kms, you are advised to go to the nearest hospital or health care center and get checked immediately.
+  <a href="https://www.coronatracker.in">Click here for the COVID19 India Tracker Web App</a>
+  </h5>
+  <br>
+  <h3>-PREVENTION-</h3>
+  <h5> As of now, there is no vaccination or cure for covid-19. However, you can protect yourself in the following ways:
+  <ul style="list-style-type:square;">
+  <li>Wash your hands frequently</li>
+  <li>Maintain social distancing</li>
+  <li>Avoid touching eyes, nose and mouth</li>
+  <li>Practice respiratory hygiene</li>
+  <li>If you have fever, cough and difficulty breathing, seek medical care early</li>
+  <li>Stay indoors</li>
+</ul>
+<br>
+</h5>
+  <h3>-CORONA VIRUS DASHBOARD-</h3>
+  <h5>India finally has it's own corona virus dashboard which provides with the latest statistics of the situation on an hourly basis.It is the official website for corona updates provided by the Government of India.
+    <a href="https://www.covid19india.org">Click here for the covid-19 dashboard</a>
+</h5>
+</p>
+</div>
+</div>
+  <!--<div class="custom-control custom-checkbox">
+   <label for="bodytemp">Gender</label>
+    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+    <label class="custom-control-label" for="customCheck">Check this custom checkbox</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div> -->
+
+</main>
+<script src="covid/static/js/bootstrap.bundle.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script> --></body>
+</html>

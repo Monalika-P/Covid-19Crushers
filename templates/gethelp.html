@@ -1,0 +1,161 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>gethelp</title>
+
+    <!-- Bootstrap core CSS -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">
+<style>
+  body {
+  background-image: url('static/images/gh1.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/styles.css' %}" rel="stylesheet">
+  </head>
+  <body>
+  <% csrf_token %}
+    <div class="bg">
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+  <a class="navbar-brand" href="#">Covid-19Crusher</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+    <ul class="navbar-nav mr-auto">
+
+        <a class="nav-link" href="home1">Home </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="symptoms1">Self Diagonsis</a>
+      </li>
+      <li class="nav-item">
+        <li class="nav-item active">
+        <a class="nav-link" href="gethelp1">Get Help</a>
+      </li>
+      <li class="nav-item">
+         <span class="sr-only">(current)</span>
+        <a class="nav-link" href="help2">Help Others <span class="sr-only">(current)</span> </a>
+      </li>
+    </ul>
+  </div>
+</nav>
+<div class= "logo">
+<img src="static/images/i3.jpg" alt="get_help" width="80" height="80" class="float-left">
+</div>
+<div id="qr" >
+<img src="static/images/map1.jpg" alt="get_help" width="200" height="200" class="float-right">
+
+</div>
+<main role="main" class="container">
+
+  <div class="starter-template">
+    <h1><b>-HELP BOARD-<b></h1><br><br>
+
+    <h3> -GET HELP- <h3> <br>
+      <form action="gethelp_form" method="post">
+        {% csrf_token %}
+    <div class="form-group">
+    <div class = "col-sm-4">
+    <label id="forms" for="name">Name </label>
+    <input type="text" class="form-control" id="name" name="name">
+  </div>
+  <br>
+  <div class="form-group">
+    <div class = "col-sm-4">
+    <label id="forms" for="pno">Phone Number</label>
+    <input type="text" class="form-control" id="pno" name="pno">
+    </div>
+
+    <br>
+    <div class="form-group">
+    <div class = "col-sm-6">
+    <label id="forms" for="loc">Locality</label>
+    <input type="text" class="form-control" id="loc" name="loc">
+    </div>
+    <br>
+
+
+    <div class="form-group">
+    <div class = "col-sm-7">
+    <label id="forms" for="num">Number of people who need help</label>
+    <input type="text" class="form-control" id="num" name="num">
+    </div>
+    <br>
+  </div>
+</div>
+</div>
+</div>
+
+
+<div class="form-group">
+    <div class = "col-sm-6">
+    <label id="forms" for="address">Address</label>
+    <textarea class="form-control" rows="4" id="address" name="address"></textarea>
+    </div>
+    <br>
+
+    <div class="form-group">
+    <div class = "col-sm-4">
+    <label id="forms" for="pin">Pin Code</label>
+    <input type="text" class="form-control" id="pin" name="pin">
+     </div>
+     <br> <br>
+
+
+
+  <div class="buttons">
+   <div class = "col-sm-12">
+<button type="submit" class="btn btn-dark">Submit</button>
+<button type="button" class="btn btn-secondary">Reset</button>
+</div>
+
+  </div>
+    </div>
+</div>
+      
+
+
+
+</div>
+
+</div>
+</div>
+</form>
+
+  <!--<div class="custom-control custom-checkbox">
+   <label for="bodytemp">Gender</label>
+    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+    <label class="custom-control-label" for="customCheck">Check this custom checkbox</label>
+  </div>
+  <button type="submit" class="btn btn-default">Submit</button>
+    </form>
+  </div> -->
+
+</main><!-- /.container -->
+<script src="bootstrap/javascript.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script>window.jQuery || document.write('<script src="/docs/4.4/assets/js/vendor/jquery.slim.min.js"><\/script>')</script><script src="/docs/4.4/dist/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script></body>
+</html>
